@@ -6,7 +6,7 @@
 
 客户端将请求链接发给服务端，服务端根据请求做一定的截取或拼接，通过内网调用oss，再将下载下来的图片流返回给前端。
 
-```
+```java
 package com.xiaojie.ossDownloader.service;
 
 import okhttp3.Request;
