@@ -59,7 +59,7 @@ public void getImageAsBinary(HttpServletResponse response, @PathVariable String 
 }
 ```
 
-URL 直接访问简单方便，而且可以利用缓存减轻服务器压力。缺点是无法资源无法控制访问权限。
+URL 直接访问简单方便，而且可以利用缓存减轻服务器压力。缺点是资源无法控制访问权限。
 
 Base64 适合小图片传输，复用性高且基本不会被更新的图片。网页上的图片都是需要消耗一个 http 请求下载而来的，Base64的数据可以随着 HTML下载，节省一个 http 请求。Base64 还能完美兼容几乎所有系统。
 
